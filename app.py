@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import sklearn
 
 import joblib
 def main():
     model = joblib.load("model.sav")
-    import sklearn
     st.title('Customer Churn Prediction App')
     st.markdown("""
      :dart:  This Streamlit app is made to predict customer churn. 
